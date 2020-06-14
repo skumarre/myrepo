@@ -5,11 +5,7 @@ pipeline{
 	steps{
 git credentialsId: 'skumarre', url: 'https://github.com/skumarre/myrepo'
 	}
- 	stage("maven bulid"){
-      steps{
-         sh "mvn clean package"
-       } 
-      }   
+ 	
      }	
    }
 }
